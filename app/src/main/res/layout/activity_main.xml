@@ -1,0 +1,248 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+
+        <!-- A CardView that contains a TextView -->
+        <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:onClick="showSnackBar"
+            card_view:cardCornerRadius="4dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="?android:selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="134dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/playgreen" />
+
+                <TextView
+                    android:id="@+id/info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Spotify Streamer"
+                    android:textSize="25dp"
+
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- A CardView that contains a TextView -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/scores_app_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:onClick="showSnackBar"
+            card_view:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="?android:selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/scores_app_imageView"
+                    android:layout_width="134dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/footballapp" />
+
+                <TextView
+                    android:id="@+id/scores_app_info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Scores App"
+                    android:textSize="25dp"
+
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- A CardView that contains a TextView -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/library_app_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:onClick="showSnackBar"
+            card_view:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="?android:selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/library_app_imageView"
+                    android:layout_width="134dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/libraryapp" />
+
+                <TextView
+                    android:id="@+id/library_app_info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Library App"
+                    android:textSize="25dp"
+
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- A CardView that contains a TextView -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/build_it_bigger_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:onClick="showSnackBar"
+            card_view:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="?android:selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/build_it_bigger_imageView"
+                    android:layout_width="134dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/macacajokes" />
+
+                <TextView
+                    android:id="@+id/build_it_bigger_info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Build It Bigger"
+                    android:textSize="25dp"
+
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- A CardView that contains a TextView -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/xyz_reader_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:onClick="showSnackBar"
+            card_view:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="?android:selectableItemBackground"
+                >
+
+                <ImageView
+                    android:id="@+id/xyz_reader_imageView"
+                    android:layout_width="134dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/reader" />
+
+                <TextView
+                    android:id="@+id/xyz_reader_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="XYZ Reader"
+                    android:textSize="25dp"
+
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- A CardView that contains a TextView -->
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/capstone_button_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:onClick="showSnackBar"
+            card_view:cardCornerRadius="4dp"
+             >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="?android:selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/capstone_button_imageView"
+                    android:layout_width="134dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/capstone" />
+
+                <TextView
+                    android:id="@+id/capstone_button_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Capstone:"
+                    android:textSize="25dp"
+
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
